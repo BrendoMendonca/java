@@ -7,10 +7,13 @@ public class Classes {
         Jogador j2 = new Jogador(++num);
         Jogador j3 = new Jogador(++num);
 
-        j1.num = 55;//manipula o valor do atributo de j1
-        j2.num = 41;
-        System.out.printf("%d\n", j1.num);
-        System.out.printf("%d\n", j2.num);
+        j1.setVidas(200);
+        j2.setVidas(-5);
+        j3.addVidas();
+        
+        System.out.printf("Vidas do jogador 1: %d\n", j1.getVidas());
+        System.out.printf("Vidas do jogador 2: %d\n", j2.getVidas());
+        System.out.printf("Vidas do jogador 3: %d", j3.getVidas());
     }
     
 }
